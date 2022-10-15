@@ -2,9 +2,12 @@ package pro.sky.java.course2.service;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import pro.sky.java.course2.Question;
 import pro.sky.java.course2.exception.QuestionAlreadyContainsException;
 import pro.sky.java.course2.exception.QuestionNotFoundException;
 import pro.sky.java.course2.service.impl.JavaQuestionServiceImpl;
+
+import java.util.HashSet;
 
 import static pro.sky.java.course2.service.Constant.*;
 
@@ -43,12 +46,13 @@ public class JavaQuestionServiceImplTest {
         questionService.add(QUESTION3);
         questionService.add(QUESTION4);
         questionService.add(QUESTION5);
-        Assertions.assertEquals(questionService.getAll().size(), 5);
-        Assertions.assertEquals(questionService.getAll().contains(QUESTION1), true);
-        Assertions.assertEquals(questionService.getAll().contains(QUESTION2), true);
-        Assertions.assertEquals(questionService.getAll().contains(QUESTION3), true);
-        Assertions.assertEquals(questionService.getAll().contains(QUESTION4), true);
-        Assertions.assertEquals(questionService.getAll().contains(QUESTION5), true);
+        HashSet<Question> questions = (HashSet<Question>) questionService.getAll();
+        Assertions.assertEquals(questions.size(), 5);
+        Assertions.assertEquals(questions.contains(QUESTION1), true);
+        Assertions.assertEquals(questions.contains(QUESTION2), true);
+        Assertions.assertEquals(questions.contains(QUESTION3), true);
+        Assertions.assertEquals(questions.contains(QUESTION4), true);
+        Assertions.assertEquals(questions.contains(QUESTION5), true);
 
     }
     @Test
