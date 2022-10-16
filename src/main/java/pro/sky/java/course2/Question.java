@@ -20,7 +20,7 @@ public class Question {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Question questionCompr=(Question) o;
+        Question questionCompr = (Question) o;
         return Objects.equals(getQuestion(), questionCompr.getQuestion()) && Objects.equals(getAnswer(), questionCompr.getAnswer());
     }
 

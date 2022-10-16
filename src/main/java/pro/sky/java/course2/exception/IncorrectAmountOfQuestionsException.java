@@ -4,12 +4,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.BAD_REQUEST)
-public class IncorrectAmounfOfQuestionsException extends RuntimeException{
+public class IncorrectAmountOfQuestionsException extends RuntimeException {
 
-    public IncorrectAmounfOfQuestionsException() {
+    public IncorrectAmountOfQuestionsException() {
     }
 
-    public IncorrectAmounfOfQuestionsException(String message) {
+    public IncorrectAmountOfQuestionsException(String message) {
         super(message);
     }
 }
