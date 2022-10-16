@@ -6,7 +6,6 @@ import pro.sky.java.course2.Question;
 import pro.sky.java.course2.exception.QuestionAlreadyContainsException;
 import pro.sky.java.course2.exception.QuestionNotFoundException;
 import pro.sky.java.course2.service.impl.JavaQuestionServiceImpl;
-
 import java.util.HashSet;
 
 import static pro.sky.java.course2.service.Constant.*;

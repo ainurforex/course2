@@ -17,8 +17,6 @@ import pro.sky.java.course2.service.impl.JavaQuestionServiceImpl;
 import java.util.Collection;
 import java.util.HashSet;
 
-
-
 import static org.mockito.Mockito.when;
 import static pro.sky.java.course2.service.Constant.*;
 

@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pro.sky.java.course2.Question;
 import pro.sky.java.course2.service.ExaminerService;
-
 import java.util.Collection;
 
 @RestController

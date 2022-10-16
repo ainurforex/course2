@@ -8,7 +8,6 @@ public class IncorrectAmountOfQuestionsException extends RuntimeException {
 
     public IncorrectAmountOfQuestionsException() {
     }
-
     public IncorrectAmountOfQuestionsException(String message) {
         super(message);
     }
